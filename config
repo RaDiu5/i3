@@ -12,7 +12,7 @@
 # Exec on startup
 exec --no-startup-id nm-applet
 # Background
-# exec --no-startup-id feh --bg-scale /usr/share/backgrounds/Kronach_leuchtet_2014_by_Brian_Fox.jpg
+exec --no-startup-id feh --bg-scale /usr/share/backgrounds/Hotel_by_sarcasmrules2011.jpg
 
 
 # Custom config
