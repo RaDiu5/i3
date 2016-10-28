@@ -169,7 +169,11 @@ bar {
 # Custom keys
 bindsym Ctrl+Mod1+l exec i3lock -c 000000
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease sound volume
+bindsym Ctrl+F3 exec amixer -D pulse sset Master 5%+
+bindsym Ctrl+F2 exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
+# SCRATCHPAD
+# ## spotify
+bindsym $mod+m [con_mark="music"] scratchpad show
+for_window [class="Spotify"] mark "music", move scratchpad
